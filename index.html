@@ -1,8 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <meta charset="utf-8">
+  <title>Banking Application</title>
 </head>
+
+<h1>Banking Form</h1>
+<h3>Fill out the below information to complete your Banking Application</h3>
+
+<input type="input" placeholder="First Name"><br>
+<input type="input" placeholder="Middle Initial"><br>
+<input type="input" placeholder="Last Name"><br>
+<input type="input" placeholder="Home Address"><br>
+<input type="input" placeholder="Occupation"><br>
+<input type="input" placeholder="Employer"><br>
+<input type="input" placeholder="Employer Address"><br>
+
+<h2>What type of Loan are you Applying For?</h2>
+<select>
+  <option>Commercial</option>
+  <option>Real Estate</option>
+  <option>Personal</option>
+  <option>Mortgage</option>
+</select>
+
+<h2>How much of a loan are you wanting to get?</h2>
+<form action="bank_form.asp" method="get">
+  <input type="checkbox" name="loanAmount" value="500$ - 1,000$">500$ - 1,000$<br>
+  <input type="checkbox" name="loanAmount" value="1,001$ - 5,000$">1,001$ - 5,000$<br>
+  <input type="checkbox" name="loanAmount" value="10,001$ - 15,000$">10,001$ - 15,000$<br>
+  <input type="checkbox" name="loanAmount" value="15,001$ - 20,000$">15,001$ - 20,000$<br>
+  <input type="checkbox" name="loanAmount" value="More thank 20K">More thank 20K<br>
+  <input type="submit" value="Submit">
+</form>
+
+<h2>Loan Length</h2>
+<form>
+  <input type="radio" name="loanLength" value="5 Years">5 Years<br>
+  <input type="radio" name="loanLength" value="15 Years">15 Years<br>
+  <input type="radio" name="loanLength" value="30 Years">30 Years<br>
+</form>
+
+<h2>Special Conditions</h2>
+<h4>Down Payment?</h4>
+  <input type="checkbox" name="Down Payment" value="Yes">Yes<br>
+  <input type="checkbox" name="Down Payment" value="No">No
+<h4>Out-of-State Resident?</h4>
+  <input type="checkbox" name="Resident" value="No">No<br>
+  <input type="checkbox" name="Resident" value="Yes">Yes<br>
+  <input type="input" name="Resident" placeholder="If so, where?">
+<h4>Married?</h4>
+  <input type="checkbox" name="Married" value="Yes">Yes<br>
+  <input type="checkbox" name="Married" value="No">No<br>
+<h4>Loan Will Be Co-Signed?</h4>
+  <input type="checkbox" name="CoSign" value="Yes">Yes<br>
+  <input type="checkbox" name="CoSign" value="No">No<br>
+
+  <h2>Additional Comments Field</h2>
+    <textarea rows="6" cols="40">
+Please put here any relevant information that you feel will bolster your application. 
+</textarea>
+
+<h2>Contact Information</h2>
+  <input type="email" placeholder="Applicant Email" name="Applicant Email"><br>
+  <input type="phone" placeholder="Applicant Phone Number" name="Applicant Phone Number"><br>
+  <input type="url" placeholder="Applicant LinkedIN URL" name="Applicant LinkedIN URL">
+
 <body>
 </body>
 </html>
